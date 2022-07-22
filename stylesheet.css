@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+}
+h1 {
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+.blue-text {
+  color: #0066ff;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.8rem 3rem;
+  background: linear-gradient(to right, #e4e5e6, #0c78bb);
+  position: fixed;
+  width: 100vw;
+  z-index: 5;
+  flex-wrap: wrap;
+}
+#header-img {
+  width: 4rem;
+  cursor: pointer;
+}
+#nav-bar ul li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+#nav-bar ul li a {
+  text-decoration: none;
+  color: #202020;
+  transition: all 0.3s ease 0s;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+#nav-bar ul li a:hover {
+  color: white;
+  box-shadow: 0 0 25px blue;
+  background-color: #0066ff;
+  border: 0.5px solid white;
+}
+.box {
+  padding-top: 6rem;
+  min-height: 100vh;
+}
+#home {
+  text-align: center;
+  color: white;
+}
+.bg-image {
+  background-image: linear-gradient(
+      rgba(55, 58, 50, 0.6),
+      rgba(70, 70, 70, 0.6)
+    ),
+    url(https://akm-img-a-in.tosshub.com/businesstoday/images/story/202109/ott-sixteen_nine.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+}
+.main-head {
+  font-size: 2rem;
+  margin-top: 30vh;
+}
+#dropdown {
+  text-align: center;
+  height: 2rem;
+  width: 12rem;
+}
+.drop-head {
+  text-align: center;
+  padding-top: 2.5rem;
+}
+.drop-down {
+  padding-top: 1rem;
+}
+#email {
+  width: 15rem;
+  height: 2rem;
+  padding: 0.5rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+#email:focus {
+  border-color: red;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.976);
+}
+#submit {
+  width: 10rem;
+  height: 2rem;
+}
+#submit:hover {
+  border-color: blue;
+  outline: 0;
+}
+.red-text {
+  color: red;
+}
+#speed-test {
+  background: linear-gradient(to left, #ffffff, #326592);
+}
+#speed-test {
+  min-height: 100vh;
+}
+.sec-head {
+  text-align: center;
+}
+.sec-head h2 {
+  font-size: 2rem;
+  padding-top: 2rem;
+  color: black;
+}
+.video {
+  text-align: center;
+  margin-top: 5rem;
+}
+.fa-italic {
+  font-style: italic;
+}
+.quote {
+  margin: 5rem 5rem 0 5rem;
+  border-radius: 1rem;
+}
+.red-bold {
+  font-weight: 600;
+}
+.end-line {
+  margin: 5rem 1rem 0 1rem;
+  border: 3px solid white;
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+.center-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: darkblue;
+}
+#plans {
+  background: linear-gradient(to right, #fafafa, #326592);
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin: 4rem 1.5rem 0 1.5rem;
+  transform: translateY(-50%, -50%);
+  flex-wrap: wrap;
+}
+.common-card {
+  width: 40vw;
+  height: 25vh;
+  transition: all 1.8s ease;
+  transform-style: preserve-3d;
+  border-radius: 0.5rem;
+  border: 3px solid black;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+.common-card:hover {
+  transform: rotateY(180deg);
+}
+.card1 {
+  background-color: skyblue;
+}
+.card2 {
+  background-color: #72c3fb;
+}
+.card3 {
+  background-color: #89cff0;
+}
+.front {
+  position: absolute;
+  padding-top: 5rem;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  text-align: center;
+  overflow: hidden;
+  font-size: 1.5rem;
+}
+.back {
+  margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transform: rotateY(180deg);
+}
+.lower-content {
+  margin-top: 5rem;
+}
+.lower-content ol li {
+  margin-left: 4rem;
+  padding-left: 2rem;
+}
+.common-card:hover {
+  border: 3px solid white;
+  box-shadow: 0 0 25px rgb(1, 95, 202);
+}
+#about-us {
+  background-color: #303841;
+  min-height: 40vh;
+  color: white;
+  padding-top: 2vh;
+  text-align: center;
+  align-items: center;
+}
+.footer a {
+  color: red;
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 14px;
+  }
+}
